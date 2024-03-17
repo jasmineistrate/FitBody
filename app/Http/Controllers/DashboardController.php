@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Booking;
+use App\Models\Trainer;
+use App\Models\FitnessClass;
 use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
@@ -17,7 +19,9 @@ class DashboardController extends Controller
     {
         $users = User::all();
         $bookings = Booking::all();
-        return view('dashboard', compact('users', 'bookings'));
+        $classes = FitnessClass::all();
+        $trainers = Trainer::all();
+        return view('dashboard', compact('users', 'bookings', 'classes', 'trainers'));
     }
 
     /**

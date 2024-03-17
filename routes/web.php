@@ -73,9 +73,6 @@ Route::middleware('auth')->group(function () {
         Route::get('create/admin/booking', [BookingController::class, 'createAdmin'])->name('create.admin.booking');
         Route::post('store/admin/booking', [BookingController::class, 'storeAdmin'])->name('store.admin.booking');
         Route::get('/search/users', [BookingController::class, 'searchUsers']);
-        //Route::put('update/admin/booking/{id}', [BookingController::class, 'updateAdmin'])->name('update.admin.booking');
-        //Route::get('edit/admin/booking{id}', [BookingController::class, 'editAdmin'])->name('edit.admin.booking');
-        //Route::delete('delete/admin/booking{id}', [BookingController::class, 'deleteAdmin'])->name('delete.admin.booking');
 
         Route::get('/dash/data', [DashboardController::class, 'usersPerMonth']);
     });

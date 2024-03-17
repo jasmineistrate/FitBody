@@ -21,13 +21,14 @@
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!--bg-cover bg-center bg-no-repeat style="background-image: url(background/bg.jpg)"-->
+        <link rel="icon" type="image/x-icon" href="{{asset('icons/logo2.png')}}">
 
     </head>
     <body class="font-sans antialiased bg-gradient-to-r from-pink-300 to-black">
-            @if(session()->has('success'))
-            <div class="success-message text-green-500">
+    @if(session()->has('success'))
+            <marquee direction="right" scrollamount="15" loop="1" class="success-message text-green-500">
                 {{ session()->get('success') }}
-            </div>
+            </marquee>
             @endif
             @if ($errors->any())
             <div class="error-message">
@@ -39,9 +40,9 @@
             </div>
             @endif
             @if (session('error'))
-            <div class="error-message">
+            <marquee direction="right" scrollamount="15" loop="1" class="error-message text-red-500">
             {{ session('error') }}
-            </div>
+            </marquee>
             @endif
             @include('layouts.frontNavigation')
             @yield('content')

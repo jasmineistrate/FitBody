@@ -40,8 +40,8 @@
             </ul>
             @else
             <ul class="flex space-x-2 items-center">
-                <div id="parent-dropdown">
-                    <li><a href="/login" class="hover:text-pink-300 font-bold text-lg">Log in</a></li>
+                <div id="parent-dropdown" class="flex gap-x-5">
+                    <li><a href="/login" class="hover:text-pink-300 font-bold text-lg">Login</a></li>
                     <li><a href="/register" class="hover:text-pink-300 font-bold text-lg">Register</a></li>
                 </div>
             </ul>

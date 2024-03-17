@@ -8,10 +8,12 @@
                 <img class="w-full h-64 object-cover" src="{{asset('classesImages/'.$class->image)}}" alt="Class Image">
                 <!-- Details -->
                 <div class="absolute top-0 left-0 right-0 p-4 text-white">
-                    <p class="text-sm">Start Time: {{$class->start}}</p>
-                    <p class="text-sm">End Time:{{$class->end}}</p>
-                    <p class="text-sm">Duration: {{$class->duration}}  hours</p>
-                    <p class="text-sm">Trainer: {{$class->trainer}}</p>
+                    <div class="bg-pink-600 w-40 py-2">
+                    <p class="text-sm mx-4 mt-2">Start Time: {{$class->start}}</p>
+                    <p class="text-sm mx-4">End Time:{{$class->end}}</p>
+                    <p class="text-sm mx-4">Duration: {{$class->duration}}  hours</p>
+                    <p class="text-sm mx-4 mb-2">Trainer: {{$class->trainer}}</p>
+                    </div>
                 </div>
             </div>
             <div class="px-6 py-4">

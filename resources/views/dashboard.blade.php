@@ -18,8 +18,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <!-- 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h2 class="text-lg font-semibold text-gray-800 mb-4">m</h2>
-                    <canvas id="revenueChart" width="400" height="200"></canvas>
+                    <img src="{{asset('background/bg.jpg')}}" alt="" style="width:100%;max-width:700px">
+                    
                 </div>
                 <!-- 2 -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -39,6 +39,14 @@
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h2 class="text-lg font-semibold text-gray-800 mb-4">Total Bookings</h2>
                     <p class="text-3xl font-bold text-green-600">{{count($bookings)}}</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Total Classes</h2>
+                    <p class="text-3xl font-bold text-green-600">{{count($classes)}}</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Total Trainers</h2>
+                    <p class="text-3xl font-bold text-green-600">{{count($trainers)}}</p>
                 </div>
             </div>
         </div>

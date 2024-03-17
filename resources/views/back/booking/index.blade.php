@@ -15,7 +15,6 @@
                     <th class="py-2 px-4 border-b">Date</th>
                     <th class="py-2 px-4 border-b">Created_at</th>
                     <th class="py-2 px-4 border-b">Updated_at</th>
-                    <th class="py-2 px-4 border-b">Actions</th>
                 </tr>
             </thead>
             <tbody class="bg-white">
@@ -30,20 +29,6 @@
                     <td class="py-2 px-4 border-b">{{$booking->date}}</td>
                     <td class="py-2 px-4 border-b">{{$booking->created_at}}</td>
                     <td class="py-2 px-4 border-b">{{$booking->updated_at}}</td>
-                    <td class="py-2 px-4 border-b">
-                        <!--Action buttons-->
-                        <form action="" method="POST">
-                            @csrf 
-                            @method('DELETE')
-                            <button class="px-2 py-1 rounded"><img src="{{asset('icons/delete.png')}}" alt="" class="w-8"></button>
-                        </form>
-                        <button class="px-2 py-1 rounded">
-                            <a href=""><img src="{{asset('icons/edit.png')}}" alt="" class="w-8"></a>
-                        </button>
-                        <button class="px-2 py-1 rounded">
-                            <a href=""><img src="{{asset('icons/show.png')}}" alt="" class="w-8"></a>
-                        </button>
-                    </td>
                 </tr>
                 @endforeach
             </tbody>

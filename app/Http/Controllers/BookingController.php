@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\FitnessClass;
 use App\Models\Booking;
+use App\Mail\ConfirmBooking;
+use Illuminate\Support\Facades\Mail;
 
 class BookingController extends Controller
 {
@@ -55,6 +57,7 @@ class BookingController extends Controller
                     'participants'=>$class->participants . '|' . $user->id
                 ]);
             }
+            Mail::to($user->email)->send(new ConfirmBooking($class->title, $class->start, $class->end, $user->name));
             return redirect(route('index.admin.booking'))->with('success', 'The booking has been created');
         }
         else
@@ -118,6 +121,7 @@ class BookingController extends Controller
                     'participants'=>$class->participants . '|' . auth()->user()->id
                 ]);
             }
+            Mail::to(auth()->user()->email)->send(new ConfirmBooking($class->title, $class->start, $class->end, auth()->user()->name));
             return redirect(route('index.booking'))->with('success', 'The booking has been created');
         }
         else

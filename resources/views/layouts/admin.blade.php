@@ -15,6 +15,7 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <link rel="icon" type="image/x-icon" href="{{asset('icons/logo2.png')}}">
 
     </head>
     <body class="font-sans antialiased bg-gray-100">
@@ -33,9 +34,9 @@
             </div>
             @endif
             @if (session('error'))
-            <div class="error-message">
+            <marquee direction="right" scrollamount="15" loop="1" class="error-message text-green-500">
             {{ session('error') }}
-            </div>
+            </marquee>
             @endif
             @include('layouts.navigation')
             @yield('content')

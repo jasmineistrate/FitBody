@@ -10,6 +10,7 @@
     top: 55px;
     display: none;
     width: 115px;
+    z-index: 1000;
 }
 
 #dropdown-dashboard-user{
@@ -19,6 +20,7 @@
     right: 0px;
     top: 55px;
     display: none;
+    z-index: 1000;
 }
 
 #confirmation-modal{
@@ -34,4 +36,40 @@
     border-radius: 7px;
     padding: 10px 15px;
     flex-direction: column;
+}
+
+html,
+body {
+  position: relative;
+  height: 80%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-landing {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#swiper-image-landing {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

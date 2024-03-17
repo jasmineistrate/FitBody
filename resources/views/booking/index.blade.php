@@ -10,7 +10,7 @@
 </div>
 
     <div class="max-w-4xl mx-auto mt-6">
-        <h1 class="text-3xl font-semibold text-center mb-6">User Booking Data</h1>
+        <h1 class="text-3xl font-semibold text-center mb-6 text-white">My bookings</h1>
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
             <table class="min-w-full divide-y divide-gray-200">
                 <thead class="bg-gray-50">
@@ -40,7 +40,7 @@
                         <td class="px-6 py-4 whitespace-nowrap">{{ substr($booking->start, 0, 5) }}</td>
                         <td class="px-6 py-4 whitespace-nowrap">{{ substr($booking->start, 0, 5) }}</td>
                         <td class="px-6 py-4 whitespace-nowrap">
-                            <button id="confirmButton" data-booking-id="{{$booking->id}}" onclick="confirmDeleteBooking(this)">Delete</button>
+                            <button class="bg-pink-600 text-white px-2 py-1 rounded" id="confirmButton" data-booking-id="{{$booking->id}}" onclick="confirmDeleteBooking(this)">Delete</button>
                         </td>
                     </tr>
                     @endforeach
