@@ -45,7 +45,7 @@
                 <tbody class="bg-white divide-y divide-gray-200">
                     @foreach($users as $user)
                     <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">{{$user -> name}}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-red">{{$user -> name}}</td>
                         <td class="px-6 py-4 whitespace-nowrap">{{$user -> email}}</td>
                     </tr>
                     @endforeach
