@@ -54,5 +54,6 @@
             <p>&copy; 2024 FitBody. All rights reserved.</p>
             </div>
             <script src="{{asset('js/cancelBooking.js')}}"></script>
+            <script src="{{asset('js/bmi.js')}}"></script>
     </body>
 </html>

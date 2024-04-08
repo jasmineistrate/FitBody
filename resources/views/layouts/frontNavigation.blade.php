@@ -7,6 +7,7 @@
             <ul class="flex space-x-4 w-full justify-center">
                 <li><a href="{{route('landing')}}" class="hover:text-pink-300 font-bold text-lg">Home</a></li>
                 <li><a href="{{route('showtrainers')}}" class="hover:text-pink-300 font-bold text-lg">Meet our team</a></li>
+                <li><a href="{{route('bmiCalculator')}}" class="hover:text-pink-300 font-bold text-lg">Bmi calculator</a></li>
                 <li><a href="{{route('contact')}}" class="hover:text-pink-300 font-bold text-lg">Contact us</a></li>
             </ul>
 
