@@ -26,8 +26,8 @@
                 <input type="time" id="start" name="start" value="{{$class->start}}" class="mt-1 p-2 w-31 border-2 rounded-md border-pink-200">
             </div>
             <div class="mr-4">
-                <label class="ml-3 block text-sm font-medium text-gray-600">Duration</label>
-                <input type="text" id="duration" name="duration" value="{{$class->duration}} h" class="ml-3 mt-1 p-2 w-40 border-2 rounded-md border-pink-200">
+                <label class="ml-3 block text-sm font-medium text-gray-600">Duration(h)</label>
+                <input type="text" id="duration" name="duration" value="{{$class->duration}} " class="ml-3 mt-1 p-2 w-40 border-2 rounded-md border-pink-200">
             </div>
             </div>
 

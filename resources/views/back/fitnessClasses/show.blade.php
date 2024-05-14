@@ -22,8 +22,13 @@
             </div>
             <!-- Buttons -->
             <div class="px-6 py-4 flex justify-center space-x-4">
-                <button class="px-4 py-2 text-white text-sm font-semibold rounded-full bg-pink-600 text-white hover:bg-pink-200">Edit Class</button>
-                <button class="px-4 py-2 text-white text-sm font-semibold rounded-full bg-pink-600 text-white hover:bg-pink-200">Delete Class</button>
+                <button class="px-4 py-2 text-white text-sm font-semibold rounded-full bg-pink-600 text-white hover:bg-pink-200"><a href="{{route('edit.class', $class->id)}}">Edit Class</a></button>
+                        <form action="{{route('delete.class', $class->id)}}" method="POST">
+                            @csrf 
+                            @method('DELETE')
+                            <button class="px-4 py-2 text-white text-sm font-semibold rounded-full bg-pink-600 text-white hover:bg-pink-200">Delete Class</button>
+                        </form>
+                </button>
             </div>
         </div>
         <div>

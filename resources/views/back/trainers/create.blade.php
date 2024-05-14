@@ -16,7 +16,7 @@
 
             <!-- Age -->
             <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-600">Trainer's name</label>
+                <label class="block text-sm font-medium text-gray-600">Trainer's age</label>
                 <input type="text" id="age" name="age" placeholder="Trainer's age" class="mt-1 p-2 w-full border-2 rounded-md border-pink-200">
             </div>
 

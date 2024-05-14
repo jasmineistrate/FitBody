@@ -18,7 +18,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <!-- 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <img src="{{asset('background/bg.jpg')}}" alt="" style="width:100%;max-width:700px">
+                    <img src="{{asset('background/dashboard.jpg')}}" alt="" style="width:100%;max-width:700px">
                     
                 </div>
                 <!-- 2 -->
